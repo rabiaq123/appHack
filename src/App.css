@@ -4,10 +4,18 @@ body {
 }
 
 .cardRow {
-  padding: 10px;
+  padding: 60px;
+}
+
+.btnLocation{
+  position: relative;
 }
 
 .btnRow {
-  padding: 7px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-

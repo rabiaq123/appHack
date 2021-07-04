@@ -5,6 +5,8 @@ import { Component } from 'react';
 import firebase from 'firebase/app';
 import 'firebase/database';
 import {DB_CONFIG} from './Config/Firebase/db_config';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import * as ReactBootStrap from 'react-bootstrap';
 
 class App extends Component {
   
@@ -61,9 +63,20 @@ class App extends Component {
   }
   
   render(){
+
     return (
       <div className="App">
-        
+        <ReactBootStrap.Navbar bg="dark" variant="dark">
+          <ReactBootStrap.Navbar.Brand href="#home">Study Buddy</ReactBootStrap.Navbar.Brand>
+          <ReactBootStrap.Nav className="mr-auto">
+            <ReactBootStrap.Nav.Link href="#home">Home</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="#Deck">Deck</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="#Add">Add</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="#Edit">Edit</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="#Delete">Delete</ReactBootStrap.Nav.Link>
+          </ReactBootStrap.Nav>
+        </ReactBootStrap.Navbar>
+
         <div className="cardRow">
           {/* Display Card */}
           <Card ques={this.state.currentCard.ques} 
@@ -71,11 +84,12 @@ class App extends Component {
           />
         </div>
         <br></br>
-        <div className="btnRow">
-          {/*  Draw Button */}
-          <DrawButton drawCard={this.updateCard}/>
+        <div className="btnLocation">
+          <div className="btnRow">
+            {/*  Draw Button */}
+            <DrawButton drawCard={this.updateCard}/>
+          </div>
         </div>
-        
       </div>
     );
   }
