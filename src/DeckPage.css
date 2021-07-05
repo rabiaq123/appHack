@@ -1,4 +1,56 @@
 body {
-    background-color: #978080;
+    background-color: #242424;
     align-items: center;
+}
+
+.home {
+    background-color: #242424;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deckCard-layout {
+    width: 100%;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.deckCard {
+    background-color:#C4C4C4;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 15px;
+    transform-style:preserve-3d;
+    transition: 150ms;
+    transform: rotateY(var(--rotate-y, 0));
+    cursor: pointer;
+}
+
+.deckCard.flip {
+    --rotate-y: 180deg;
+}
+
+.deckCard:hover{
+    box-shadow: 0 0 5px 2px rgba(247, 247, 247, 0.788);
+}
+
+.deckCard .front,
+.deckCard .back {
+    transform: rotateX(0deg);
+    position: absolute;
+    padding: 1rem;
+    text-align: center;
+    font-size: 18;
+    backface-visibility: hidden;
+}
+
+.deckCard .back {
+    transform: rotateY(180deg);
 }

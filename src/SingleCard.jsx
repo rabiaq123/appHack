@@ -1,6 +1,7 @@
 import './App.css';
 import Card from './Card/Card';
 import DrawButton from './Draw/DrawButton';
+import DeckPage from './DeckPage'
 import { Component } from 'react';
 import firebase from 'firebase/app';
 import 'firebase/database';
@@ -44,7 +45,7 @@ class SingleCard extends Component {
           })
     
         })
-    
+        //DeckPage(currentCards);
     }
 
     getRandomCard(currentCards){
@@ -63,8 +64,8 @@ class SingleCard extends Component {
         return (
           <div className="app">
             <div className="cardRow">
-            {/* Display Card */}
-            <Card ques={this.state.currentCard.ques} ans={this.state.currentCard.ans}/>
+              {/* Display Card */}
+              <Card ques={this.state.currentCard.ques} ans={this.state.currentCard.ans}/>
             </div>
             <br></br>
             <div className="btnLocation">

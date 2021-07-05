@@ -9,8 +9,7 @@ function Nav(){
             <ReactBootStrap.Nav.Link href="Home">Home</ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link href="Deck">Deck</ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link href="Add">Add</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="Edit">Edit</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="Delete">Delete</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="Study">Study</ReactBootStrap.Nav.Link>
           </ReactBootStrap.Nav>
         </ReactBootStrap.Navbar>
     );
