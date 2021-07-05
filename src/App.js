@@ -6,6 +6,7 @@ import Nav from './Nav';
 import DeckPage from './DeckPage';
 import SingleCard from './SingleCard';
 import AddCard from './DeckScreen/AddCard';
+import Home from './Home';
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path="/Deck" component={DeckPage}/>
             <Route path="/Add" component={AddCard}/>
             <Route path="/Study" component={SingleCard}/>
+            <Route path="/Home" component={Home}></Route>
           </Switch>
         </Router>
       </div>
