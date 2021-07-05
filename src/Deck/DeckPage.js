@@ -1,5 +1,4 @@
 import React from 'react'
-import './DeckPage.css';
 
 function DeckPage() {
       return (

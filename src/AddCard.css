@@ -1,0 +1,27 @@
+.popup {
+    position: fixed;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    color:white;
+}
+
+.popup-inner {
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.popup-inner .close-btn{
+    position: absolute;
+    top: 270px;
+    right: 140px;
+}

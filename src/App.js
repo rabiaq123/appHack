@@ -1,10 +1,11 @@
 import './App.css';
 import { Component } from 'react';
 import 'firebase/database';
-import DeckPage from './DeckPage';
 import Nav from './Nav';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import SingleCard from './SingleCard';
+import DeckPage from './Deck/DeckPage';
+import AddCard from './AddCard';
 
 
 class App extends Component {
@@ -17,7 +18,9 @@ class App extends Component {
           <Nav/>
           <Switch>
             <Route path="/" exact component={SingleCard}/>
-            <Route path="/deck" component={DeckPage}/>
+            <Route path="/Study"component={SingleCard}/>
+            <Route path="/Deck" component={DeckPage}/>
+            <Route path="/Add" component={AddCard}/>
           </Switch>
         </Router>
       </div>
